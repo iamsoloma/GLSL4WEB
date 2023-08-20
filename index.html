@@ -7,11 +7,68 @@
     
     <script src="main.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/viewer.css">
+    <link rel="stylesheet" href="styles/lib.css">
     
     <title>GLSL shader</title>
 </head>
+
+<style>
+    html, body {
+        width:  100%;
+        height: 100%;
+        margin: 0;
+
+        background-color: black;
+        color: white;
+    }
+
+
+    @font-face {
+        font-family: Orbitron;
+        font-style: normal;
+        font-weight: 400;
+        src: url(fonts/Orbitron-Regular.ttf);
+    }
+    @font-face {
+        font-family: Orbitron;
+        font-style: normal;
+        font-weight: 900;
+        src: url(fonts/Orbitron-Black.ttf);
+    }
+</style>
+
 <body>
-    <canvas class="glslCanvas" data-fragment-url="shaders/gasoline_effect.frag"></canvas>
+
+    <header>
+        <h1>GLSL shaders</h1>
+        <h2>for decorating web pages and more.</h2>
+    </header>
+
+    <hr>
+
+    <div class="viewer">
+        <form>
+            <button class="cntrl-before" type="submit">
+                <img src="icons/cntrl-before.svg" alt="before">
+            </button>
+            <canvas class="glslCanvas" data-fragment-url="shaders/gasoline_effect.frag"></canvas>
+            <button class="cntrl-next" type="submit">
+                <img src="icons/cntrl-next.svg" alt="next">
+            </button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="lib">
+        <ul>
+            <canvas class="glslCanvas" data-fragment-url="shaders/gasoline_effect.frag"></canvas>
+            <hr>
+            <canvas class="glslCanvas" data-fragment-url="shaders/liquid_colors.frag"></canvas>
+        </ul>
+    </div>
+    
 </body>
 </html>

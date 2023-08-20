@@ -1,0 +1,13 @@
+.lib {
+    margin-top: 1rem;
+}
+
+.lib ul {
+    margin: 1 rem;
+    display: flex;
+    justify-content: center;
+}
+
+.lib canvas {
+    margin: 0;
+}

@@ -1,0 +1,17 @@
+header {
+    display: block;
+}
+
+header h1 {
+    margin: 1rem;
+    font-size: normal;
+    font-weight: 900;
+    font-family: Orbitron;
+}
+
+header h2 {
+    margin: 1rem;
+    font-size: normal;
+    font-weight: 400;
+    font-family: Orbitron;
+}

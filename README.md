@@ -1,4 +1,5 @@
-# This is a setup for GLSL shaders for websites.
+# GLSL4WEB
+## GLSL shaders for decorating web pages and more.
 ***
 >Dependencies:
 >>GLSL.js {

@@ -3,13 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <script src="glsl.js"></script>
+    <script src="ui/scripts/glsl.js"></script>
     
-    <script src="main.js"></script>
+    <script src="ui/scripts/main.js"></script>
 
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/viewer.css">
-    <link rel="stylesheet" href="styles/lib.css">
+    <link rel="stylesheet" href="ui/styles/header.css">
+    <link rel="stylesheet" href="ui/styles/viewer.css">
+    <link rel="stylesheet" href="ui/styles/lib.css">
     
     <title>GLSL shader</title>
 </head>
@@ -29,13 +29,13 @@
         font-family: Orbitron;
         font-style: normal;
         font-weight: 400;
-        src: url(fonts/Orbitron-Regular.ttf);
+        src: url(ui/fonts/Orbitron-Regular.ttf);
     }
     @font-face {
         font-family: Orbitron;
         font-style: normal;
         font-weight: 900;
-        src: url(fonts/Orbitron-Black.ttf);
+        src: url(ui/fonts/Orbitron-Black.ttf);
     }
 </style>
 
@@ -51,11 +51,11 @@
     <div class="viewer">
         <form>
             <button class="cntrl-before" type="submit">
-                <img src="icons/cntrl-before.svg" alt="before">
+                <img src="ui/icons/cntrl-before.svg" alt="before">
             </button>
             <canvas class="glslCanvas" data-fragment-url="shaders/gasoline_effect.frag"></canvas>
             <button class="cntrl-next" type="submit">
-                <img src="icons/cntrl-next.svg" alt="next">
+                <img src="ui/icons/cntrl-next.svg" alt="next">
             </button>
         </form>
     </div>

@@ -5,11 +5,12 @@
     
     <script src="ui/scripts/glsl.js"></script>
     
-    <script src="ui/scripts/main.js"></script>
+    <script src="ui/scripts/shader-info.js"></script>
 
     <link rel="stylesheet" href="ui/styles/header.css">
     <link rel="stylesheet" href="ui/styles/viewer.css">
     <link rel="stylesheet" href="ui/styles/lib.css">
+    <link rel="stylesheet" href="ui/styles/shader-info.css">
     
     <title>GLSL shader</title>
 </head>
@@ -19,6 +20,8 @@
         width:  100%;
         height: 100%;
         margin: 0;
+
+        overflow: hidden;
 
         background-color: black;
         color: white;
@@ -39,23 +42,33 @@
     }
 </style>
 
+
 <body>
 
     <header>
-        <h1>GLSL shaders</h1>
-        <h2>for decorating web pages and more.</h2>
+        <div class="title">
+            <h1>GLSL shaders</h1>
+            <h2>for decorating web pages and more.</h2>
+        </div>
+
+        <div class="info">
+            <a href="https://github.com/TinajXD1">Author</a>
+            <img src="ui/icons/info.svg" alt="info">
+        </div>
     </header>
 
     <hr>
 
     <div class="viewer">
         <form>
-            <button class="cntrl-before" type="submit">
-                <img src="ui/icons/cntrl-before.svg" alt="before">
+            <button class="viewer-before" type="button">
+                <img src="ui/icons/viewer-before.svg" alt="before">
             </button>
-            <canvas class="glslCanvas" data-fragment-url="shaders/gasoline_effect.frag"></canvas>
-            <button class="cntrl-next" type="submit">
-                <img src="ui/icons/cntrl-next.svg" alt="next">
+            <button class="viewer-canvas" type="button">
+                <canvas class="glslCanvas" data-fragment-url="shaders/gasoline_effect.frag"></canvas>
+            </button>
+            <button class="viewer-next" type="button">
+                <img src="ui/icons/viewer-next.svg" alt="next">
             </button>
         </form>
     </div>
@@ -68,6 +81,17 @@
             <hr>
             <canvas class="glslCanvas" data-fragment-url="shaders/liquid_colors.frag"></canvas>
         </ul>
+    </div>
+
+    <div class="shader-info">
+        <div class="shader-info-content">
+            <h1>name</h1>
+            <h2>author</h2>
+            <h3>id</h3>
+            <h3>link</h3>
+            <p>*Need a GLSL embedder!</p>
+        </div>
+        
     </div>
     
 </body>

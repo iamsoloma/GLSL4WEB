@@ -6,11 +6,22 @@
 }
 
 .viewer canvas {
-    width: 90%;
+    width: 100%;
+    height: 100%;
     margin: 0;
+    padding: 0;
 }
 
-.viewer button {
+.viewer .viewer-canvas {
+    width: 90%;
+    height: 100%;
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.viewer .viewer-before, .viewer-next {
     width: 5%;
     height: 100%;
     margin: 0;
@@ -18,9 +29,9 @@
     background-color: black;
     cursor: pointer;
 }
-.viewer button:hover {
+.viewer .viewer-before:hover, .viewer-next:hover {
     background-color: rgb(40, 40, 40);
 }
-.viewer button:active {
+.viewer .viewer-before:active, .viewer-next:active {
     box-shadow: 1rem;
 }

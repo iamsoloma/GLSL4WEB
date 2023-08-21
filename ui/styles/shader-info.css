@@ -1,0 +1,23 @@
+.shader-info{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.shader-info-content {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 50%;
+    width: 75%;
+}
+
+.hidden {
+    display: none;
+}

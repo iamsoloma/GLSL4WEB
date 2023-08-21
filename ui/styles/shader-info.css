@@ -4,20 +4,58 @@
     top: 0;
     width: 100%;
     height: 100%;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.5s, visibility 0.5s;
 }
 
-.shader-info-content {
+.shader-info-window {
     background-color: rgba(0, 0, 0, 0.75);
     height: 50%;
     width: 75%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
 }
 
-.hidden {
-    display: none;
+.shader-info.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.shader-info-close {
+    background-color: black;
+}
+
+.shader-info-content {
+    padding: 1rem;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.shader-info button {
+    height: 100%;
+    width: 20%;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: black;
+}
+.shader-info button:active{
+    background-color: rgb(40, 40, 40);
+}
+.shader-info img {
+    width: 90%;
+    height: 90%;
 }

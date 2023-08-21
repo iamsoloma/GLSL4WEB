@@ -1,14 +1,22 @@
-const viewerCanvas = document.querySelector("viewer-canvas")
+document.getElementById("shader-info-btn").addEventListener(
+    'click',
+    function() {
+        document.getElementById("shader-info").classList.add('open')
+    }
+)
 
-viewerCanvas.addEventListener('click', () => {
-    const shaderInfo = document.querySelector("shader-info")
-    shaderInfo.style.display = "flex"
-})
+document.getElementById("shader-close-btn").addEventListener(
+    'click',
+    function() {
+        document.getElementById("shader-info").classList.remove('open')
+    }
+)
 
-function openShaderInfo() {
-    shaderInfo.style.display = "flex"
-}
-
-function closeShaderInfo() {
-    shaderInfo.style.display = "none"
-}
+window.addEventListener(
+    'keydown',
+    function(e) {
+        if (e.key === "Escape") {
+            document.getElementById("shader-info").classList.remove('open')
+        }
+    }
+)

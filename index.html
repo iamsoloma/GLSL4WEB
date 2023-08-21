@@ -5,7 +5,7 @@
     
     <script src="ui/scripts/glsl.js"></script>
     
-    <script src="ui/scripts/shader-info.js"></script>
+    <script src="ui/scripts/shader-info.js" defer></script>
 
     <link rel="stylesheet" href="ui/styles/header.css">
     <link rel="stylesheet" href="ui/styles/viewer.css">
@@ -21,7 +21,7 @@
         height: 100%;
         margin: 0;
 
-        overflow: hidden;
+        
 
         background-color: black;
         color: white;
@@ -62,13 +62,13 @@
     <div class="viewer">
         <form>
             <button class="viewer-before" type="button">
-                <img src="ui/icons/viewer-before.svg" alt="before">
+                <img src="ui/icons/before.svg" alt="before">
             </button>
-            <button class="viewer-canvas" type="button">
+            <button class="viewer-canvas" id="shader-info-btn" type="button">
                 <canvas class="glslCanvas" data-fragment-url="shaders/gasoline_effect.frag"></canvas>
             </button>
             <button class="viewer-next" type="button">
-                <img src="ui/icons/viewer-next.svg" alt="next">
+                <img src="ui/icons/next.svg" alt="next">
             </button>
         </form>
     </div>
@@ -77,21 +77,27 @@
 
     <div class="lib">
         <ul>
+            <hr>
             <canvas class="glslCanvas" data-fragment-url="shaders/gasoline_effect.frag"></canvas>
             <hr>
             <canvas class="glslCanvas" data-fragment-url="shaders/liquid_colors.frag"></canvas>
+            <hr>
         </ul>
     </div>
 
-    <div class="shader-info">
-        <div class="shader-info-content">
-            <h1>name</h1>
-            <h2>author</h2>
-            <h3>id</h3>
-            <h3>link</h3>
-            <p>*Need a GLSL embedder!</p>
+    <div class="shader-info" id="shader-info">
+        <div class="shader-info-window" id="shader-info-window">
+            <button class="shader-info-close" id="shader-close-btn" type="button">
+                <img src="ui/icons/close.svg" alt="close">
+            </button>
+            <div class="shader-info-content">
+                <h1>name</h1>
+                <h2>author</h2>
+                <h3>link</h3>
+                <h3>id</h3>
+                <p>*Need a GLSL embedder!</p>
+            </div>
         </div>
-        
     </div>
     
 </body>

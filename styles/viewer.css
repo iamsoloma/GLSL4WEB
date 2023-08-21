@@ -9,6 +9,18 @@
     width: 90%;
     margin: 0;
 }
+
 .viewer button {
     width: 5%;
+    height: 100%;
+    margin: 0;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.viewer button:hover {
+    background-color: rgb(40, 40, 40);
+}
+.viewer button:active {
+    box-shadow: 1rem;
 }

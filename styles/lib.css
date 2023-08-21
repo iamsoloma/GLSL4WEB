@@ -3,9 +3,9 @@
 }
 
 .lib ul {
-    margin: 1 rem;
     display: flex;
     justify-content: center;
+    padding: 1rem;
 }
 
 .lib canvas {

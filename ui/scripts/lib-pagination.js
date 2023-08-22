@@ -26,9 +26,16 @@ function displayLibrary(arrData, blocksPerPage, page) {
     paginatedData.forEach(element => {
         const shaderElem = document.createElement('div')
         shaderElem.classList.add('shader')
+        console.log(element.link)
         shaderElem.innerHTML = `<canvas class="glslCanvas" data-fragment-url="${element.link}"></canvas>`
         shadersElem.appendChild(shaderElem)
+        updateGLSL(shaderElem)
     })
+
+}
+
+function updateGLSL(canvas) {
+    var sandbox = new GlslCanvas(canvas)
 }
 
 function displayPaginaton(arrData, blocksPerPage) {

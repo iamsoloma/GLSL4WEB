@@ -1,15 +1,14 @@
 .lib {
     margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
 }
 
-.lib ul {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-}
 
 .lib canvas {
     margin: 0;
+    border-radius: .5rem;
 }
 
 .pagination{
@@ -20,13 +19,23 @@
 
 .paginationList {
     display: flex;
+    flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 .paginationBtn {
-    color: white;
     margin: .5rem;
     padding: .5rem;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: .25rem;
+}
+
+.shader {
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: .5rem;
 }

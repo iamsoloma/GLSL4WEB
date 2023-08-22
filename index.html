@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script src="ui/scripts/shader-info.js" defer></script>
+    <script src="ui/scripts/lib-pagination.js" defer></script>
     
     <script src="ui/scripts/glsl.js" defer></script>
 
@@ -75,15 +76,12 @@
 
     <hr>
 
-    <div class="lib">
-        <ul>
-            <hr>
-            <canvas class="glslCanvas" data-fragment-url="shaders/1.frag"></canvas>
-            <hr>
-            <canvas class="glslCanvas" data-fragment-url="shaders/2.frag"></canvas>
-            <hr>
-        </ul>
-    </div>
+    <div class="pagination"></div>
+
+    <hr>
+
+    <div class="lib"></div>
+
 
     <div class="shader-info" id="shader-info">
         <div class="shader-info-window" id="shader-info-window">

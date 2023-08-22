@@ -1,20 +1,25 @@
-[
-    {
-        "id": 1,
-        "name": "gasoline_effect",
-        "author": "TinajXD",
-        "link": "/shaders/1.frag"
-    },
-    {
-        "id": 2,
-        "name": "liquid_colors",
-        "author": "TinajXD",
-        "link": "/shaders/2.frag"
-    },
-    {
-        "id": 3,
-        "name": "tv_noise",
-        "author": "TinajXD",
-        "link": "/shaders/3.frag"
-    }
+[{
+    "id": 1,
+    "name": "gasoline_effect",
+    "author": "TinajXD",
+    "link": "/shaders/1.frag"
+},
+{
+    "id": 2,
+    "name": "liquid_colors",
+    "author": "TinajXD",
+    "link": "/shaders/2.frag"
+},
+{
+    "id": 3,
+    "name": "tv_noise",
+    "author": "TinajXD",
+    "link": "/shaders/3.frag"
+},
+{
+    "id": 4,
+    "name": "white",
+    "author": "anonymous",
+    "link": "/shaders/4.frag"
+}
 ]

@@ -18,8 +18,14 @@
 },
 {
     "id": 4,
-    "name": "white",
-    "author": "anonymous",
+    "name": "gyp_circles",
+    "author": "TinajXD",
     "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/4.frag"
-}
+},
+{
+    "id": 5,
+    "name": "bar_code",
+    "author": "TinajXD",
+    "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/5.frag"
+},
 ]

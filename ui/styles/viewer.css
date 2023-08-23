@@ -1,8 +1,9 @@
 .viewer form {
     width:  100%;
-    height: 50%;
+    height: 100%;
     margin-top: 1rem;
     display: flex;
+    flex-direction: row;
 }
 
 .viewer canvas {
@@ -28,6 +29,8 @@
     color: white;
     background-color: black;
     cursor: pointer;
+    border: none;
+    border-color: rgba(25, 25, 25, 0.5);
 }
 .viewer .viewer-before:hover, .viewer-next:hover {
     background-color: rgb(40, 40, 40);

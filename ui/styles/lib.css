@@ -32,6 +32,8 @@
     color: black;
     background-color: white;
     border-radius: .25rem;
+    font-family: Orbitron;
+    font-size: medium;
 }
 
 .shader {

@@ -6,7 +6,6 @@ async function getData() {
 
 async function mainLibrary () {
     const data = await getData()
-    console.log(data)
 
     var currentPage = 1
     var blocks = 3
@@ -26,7 +25,7 @@ function displayLibrary(arrData, blocksPerPage, page) {
     paginatedData.forEach(element => {
         const shaderElem = document.createElement('div')
         shaderElem.classList.add('shader')
-        console.log(element.link)
+        console.log("Shader on page: " + element.link)
         shaderElem.innerHTML = 
         `
             <canvas class="glslCanvas" data-fragment-url="${element.link}"></canvas>

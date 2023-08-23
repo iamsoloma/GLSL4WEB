@@ -27,7 +27,15 @@ function displayLibrary(arrData, blocksPerPage, page) {
         const shaderElem = document.createElement('div')
         shaderElem.classList.add('shader')
         console.log(element.link)
-        shaderElem.innerHTML = `<canvas class="glslCanvas" data-fragment-url="${element.link}"></canvas>`
+        shaderElem.innerHTML = 
+        `
+            <canvas class="glslCanvas" data-fragment-url="${element.link}"></canvas>
+            <div class="shader-info">
+                <h1>${element.name}</h1>
+                <h1>${element.author}</h1>
+                <a href="${element.link}">${element.link}</a>
+            </div>
+        `
         shadersElem.appendChild(shaderElem)
     })
 

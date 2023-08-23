@@ -16,7 +16,8 @@ float stat_noise(vec2 pos) {
 void main()
 {
     // Normalized pixel coordinates (from 0 to 1)
-    vec2 uv = gl_FragCoord.xy / u_resolution;
+    //vec2 uv = gl_FragCoord.xy / u_resolution;
+    vec2 uv = (gl_FragCoord.xy * 2.0 - u_resolution.xy) / u_resolution.y;
 
 
 	float n = stat_noise(uv);

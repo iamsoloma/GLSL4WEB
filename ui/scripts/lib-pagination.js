@@ -30,6 +30,7 @@ function displayLibrary(arrData, blocksPerPage, page) {
         shaderElem.innerHTML = `<canvas class="glslCanvas" data-fragment-url="${element.link}"></canvas>`
         shadersElem.appendChild(shaderElem)
     })
+
     canvases = document.querySelectorAll('.glslCanvas')
     canvases.forEach(element => {
         element.width = window.innerWidth /3.5
@@ -39,8 +40,8 @@ function displayLibrary(arrData, blocksPerPage, page) {
 
 }
 
-function updateGLSL(canvas) {
-    var sandbox = new GlslCanvas(canvas)
+function updateGLSL(canvases) {
+    var sandbox = new GlslCanvas(canvases)
 }
 
 function displayPaginaton(arrData, blocksPerPage) {

@@ -8,7 +8,7 @@ async function mainLibrary () {
     const data = await getData()
 
     var currentPage = 1
-    var blocks = 3
+    var blocks = 9
 
     displayLibrary(data, blocks, currentPage)
     displayPaginaton(data, blocks)
@@ -25,7 +25,7 @@ function displayLibrary(arrData, blocksPerPage, page) {
     paginatedData.forEach(element => {
         const shaderElem = document.createElement('div')
         shaderElem.classList.add('shader')
-        console.log("Shader on page: " + element.link)
+        console.log("Shader " + element.link + " on page.")
         shaderElem.innerHTML = 
         `
             <canvas class="glslCanvas" data-fragment-url="${element.link}"></canvas>
@@ -40,15 +40,14 @@ function displayLibrary(arrData, blocksPerPage, page) {
 
     canvases = document.querySelectorAll('.glslCanvas')
     canvases.forEach(element => {
-        element.width = window.innerWidth /3.5
-        element.height = window.innerHeight /3
+        element.width = element.parentElement.clientWidth * .9
+        element.height = element.parentElement.clientHeight * .9
         updateGLSL(element)
     })
-
 }
 
-function updateGLSL(canvases) {
-    var sandbox = new GlslCanvas(canvases)
+function updateGLSL(canvas) {
+    var sandbox = new GlslCanvas(canvas)
 }
 
 function displayPaginaton(arrData, blocksPerPage) {

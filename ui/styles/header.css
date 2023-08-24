@@ -7,21 +7,23 @@ header {
 }
 
 header .title {
+    padding: 0;
+    margin: 0;
     display: block;
-    padding: .5rem;
-    width: 75%;
     height: 100%;
 }
 
 header h1 {
-    margin: 1rem;
+    margin: 0;
+    padding: 1rem;
     font-size: normal;
     font-weight: 900;
     font-family: Orbitron;
 }
 
 header h2 {
-    margin: 1rem;
+    margin: 0;
+    padding: 1rem;
     font-size: normal;
     font-weight: 400;
     font-family: Orbitron;
@@ -29,21 +31,17 @@ header h2 {
 
 header .info {
     margin: 0;
-    padding: .5rem;
-    width: 20%;
+    padding: 0;
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-img {
-    width: 30%;
-    height: 30%;
-}
 
-a {
-    margin: 1rem;
+header a {
+    margin: 0;
+    padding: 1rem;
     font-size: 2rem;
     font-weight: 400;
     font-family: Orbitron;

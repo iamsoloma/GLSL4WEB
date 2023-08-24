@@ -72,7 +72,6 @@
 
 .shader-info h1 {
     width: 100%;
-    height: 25%;
     font-size: 2rem;;
     font-weight: 900;
     font-family: Orbitron;
@@ -80,7 +79,7 @@
 }
 .shader-info a {
     width: 100%;
-    height: 25%;
+    padding-left: 1rem;
     font-size: .75rem;
     font-weight: 400;
     font-family: Orbitron;

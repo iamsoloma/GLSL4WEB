@@ -9,4 +9,3 @@ canvases.forEach(element => {
 function updateGLSL(canvas) {
     var sandbox = new GlslCanvas(canvas)
 }
-

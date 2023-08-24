@@ -14,7 +14,7 @@ void main()
     vec2 uv = (gl_FragCoord.xy * 2.0 - u_resolution.xy) / u_resolution.y;
 
 
-	float c = fract(sin(uv.x * 100.0) * 5000.0);
+	float c = fract(sin(uv.x * 100.0) * 5000.0 + u_time);
     vec3 col = vec3(c);
 
     // Output to screen

@@ -1,11 +1,11 @@
-async function getData() {
+async function getShaderList() {
     const responce = await fetch('shaders.json')
     const data = await responce.json()
     return data
 }
 
 async function mainLibrary () {
-    const data = await getData()
+    const data = await getShaderList()
 
     var currentPage = 1
     var blocks = 9

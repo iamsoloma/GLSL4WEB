@@ -13,7 +13,7 @@ void main()
 
     float d = length(uv);
 
-    vec3 color = vec3(d + sin(u_time));
+    vec3 color = vec3(d + sin(u_time*2.0));
     
-    gl_FragColor = vec4(1.0 / color, 1.0);
+    gl_FragColor = vec4(color*-1.0, 1.0);
 }

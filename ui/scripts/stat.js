@@ -10,7 +10,7 @@ async function mainStat() {
         "Mobile: " + data.mobile + ",\n"
     )
     if (data.mobile === true) {
-        alert("😔This is not adapted for mobile devices.😔")
+        alert("😔This is not adapted for mobile devices😔")
     }
 }
 

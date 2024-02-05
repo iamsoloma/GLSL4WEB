@@ -2,54 +2,54 @@
     "id": 1,
     "name": "gasoline_effect",
     "author": "TinajXD",
-    "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/1.frag"
+    "link": "https://tinajxd.github.io/GLSL4WEB/shaders/1.frag"
 },
 {
     "id": 2,
     "name": "liquid_colors",
     "author": "TinajXD",
-    "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/2.frag"
+    "link": "https://tinajxd.github.io/GLSL4WEB/shaders/2.frag"
 },
 {
     "id": 3,
     "name": "tv_noise",
     "author": "TinajXD",
-    "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/3.frag"
+    "link": "https://tinajxd.github.io/GLSL4WEB/shaders/3.frag"
 },
 {
     "id": 4,
     "name": "gyp_circles",
     "author": "TinajXD",
-    "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/4.frag"
+    "link": "https://tinajxd.github.io/GLSL4WEB/shaders/4.frag"
 },
 {
     "id": 5,
     "name": "bar_code",
     "author": "TinajXD",
-    "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/5.frag"
+    "link": "https://tinajxd.github.io/GLSL4WEB/shaders/5.frag"
 },
 {
     "id": 6,
     "name": "strange_light",
     "author": "TinajXD",
-    "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/6.frag"
+    "link": "https://tinajxd.github.io/GLSL4WEB/shaders/6.frag"
 },
 {
     "id": 7,
     "name": "black_white_palletes",
     "author": "TinajXD",
-    "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/7.frag"
+    "link": "https://tinajxd.github.io/GLSL4WEB/shaders/7.frag"
 },
 {
     "id": 8,
     "name": "rainbow_palletes",
     "author": "TinajXD",
-    "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/8.frag"
+    "link": "https://tinajxd.github.io/GLSL4WEB/shaders/8.frag"
 },
 {
     "id": 9,
     "name": "focus_on_it",
     "author": "TinajXD",
-    "link": "https://tinajxd1.github.io/GLSL4WEB/shaders/9.frag"
+    "link": "https://tinajxd.github.io/GLSL4WEB/shaders/9.frag"
 }
 ]
